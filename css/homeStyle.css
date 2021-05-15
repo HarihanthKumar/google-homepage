@@ -1,135 +1,118 @@
 html{
-    height:100%;
+    height: 100%;
 }
 
-a{
+ul a{
+    font-size: 13px;
     color: black;
+    text-decoration: none;
+}
+
+.menu-icon{
+    height: 24px;
+    width: 24px;
+}
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+.bottom a{
+    color: gray;
 }
 
 body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 15px;
+nav{
+    float: right;
 }
 
-.gmail, .images, .menu-icon, .profile-photo{
-    font-size: 12px;
+li{
+    display: inline;
+}
+
+nav li{
     margin-right: 20px;
 }
 
 .main-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 200px;
-    align-self: center;
-    align-items: center;
+    display: block;
     width: 800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: auto;
+    position: relative;
+    top: 230px;
 }
 
-.main-container img{
-    width: 272px;
+.google-logo{
+    display: block;
+    width: 272px; 
+    margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-[type = "text"]{
-    border-radius: 30px;
-    border: 1px solid #bfbfbf;
-    height: 37px;
+#search-box{
+    display: block;
     width: 575px;
-    outline: none;
+    height: 35px;
+    margin: auto;
     margin-bottom: 20px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #d0d0d0;
 }
 
-[type = "text"]:hover{
-    box-shadow: 0 0 1px 1px #bfbfbf;
+#search-box:hover, .search:hover, .lucky:hover{
+    box-shadow: 0 0 1px 1px #dcd8d8;
     cursor: text;
 }
+
 .search:hover, .lucky:hover{
-    box-shadow: 0 0 1px 1px #bfbfbf;
     cursor: pointer;
 }
-
-.search:focus, .lucky:focus{
-    box-shadow: 0 0 1px 1px #0000ff;
-    cursor: pointer;
-}
-
 .buttons{
-    display: flex;
-    justify-content: center;
+    width: 290px;
+    margin: auto;
 }
 
 .search, .lucky{
-    background-color: #f8f9fa;
+    margin-right: 5px;
     font-size: 13px;
-    margin-right: 10px;
     padding: 10px 15px 10px 15px;
+    background-color: #f8f9fa;
 }
-.bottom{
-    display: flex;
-    flex-direction: column;
+.bottom li{
+    margin-right: 20px;
+}
+
+footer{
     background-color: #f2f2f2;
-    color: gray;
-    font-size: 13px;
-    position: relative;
-    margin-top: auto;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
 }
 
 .location{
-    padding-left: 25px;
-    margin-bottom: 10px;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfbfbf;
-}
-.footer a{
     color: gray;
+    padding: 15px 0px 15px 0px;
     font-size: 13px;
+    padding-left: 25px;
+    border-bottom: 1px solid gray;
+}
+.bottom{
+    font-size: 13px;
+    padding: 15px 0px 15px 0px;
 }
 
-.footer{
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.footer .left{
-    display: flex;
-}
-
-.footer .right{
-    position: relative;
-    display: flex;
-    margin-left: auto;
-}
-
-.privacy, .settings, .terms{
-    margin-right: 30px;
-}
-
-.about, .how-search-works, .business, .advertising{
+.left{
     margin-left: 30px;
+    display: inline-block;
+}
+
+.right{
+    float: right;
 }
