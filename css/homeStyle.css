@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gmail, .images, .menu-icon{
+    margin-right: 10px;
+}
+
+.footer{
+    display: flex;
+}
+.about, .advertising, .how-search-works, .business{
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+.location{
+    padding-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.bottom{
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+    position: relative;
+    margin-top: 730px;
+}
+
+.bottom a{
+    color: gray;
+}
