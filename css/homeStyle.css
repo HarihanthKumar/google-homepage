@@ -1,46 +1,135 @@
-body{
-    height: 100%;
+html{
+    height:100%;
 }
 
 a{
     color: black;
-    text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
 }
+
 .header{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
 }
 
-.gmail, .images, .menu-icon{
+.gmail, .images, .menu-icon, .profile-photo{
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 200px;
+    align-self: center;
+    align-items: center;
+    width: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-container img{
+    width: 272px;
+    margin-bottom: 20px;
+}
+
+[type = "text"]{
+    border-radius: 30px;
+    border: 1px solid #bfbfbf;
+    height: 37px;
+    width: 575px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+[type = "text"]:hover{
+    box-shadow: 0 0 1px 1px #bfbfbf;
+    cursor: text;
+}
+.search:hover, .lucky:hover{
+    box-shadow: 0 0 1px 1px #bfbfbf;
+    cursor: pointer;
+}
+
+.search:focus, .lucky:focus{
+    box-shadow: 0 0 1px 1px #0000ff;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.search, .lucky{
+    background-color: #f8f9fa;
+    font-size: 13px;
     margin-right: 10px;
+    padding: 10px 15px 10px 15px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    color: gray;
+    font-size: 13px;
+    position: relative;
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.location{
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.footer a{
+    color: gray;
+    font-size: 13px;
 }
 
 .footer{
     display: flex;
-}
-.about, .advertising, .how-search-works, .business{
-    padding-top: 15px;
-    margin-left: 30px;
-}
-
-.location{
-    padding-top: 15px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-}
-
-.bottom{
-    font-size: 13px;
-    color: gray;
-    padding-bottom: 15px;
-    background-color: #f2f2f2;
+    align-items: flex-start;
     position: relative;
-    margin-top: 730px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.bottom a{
-    color: gray;
+.footer .left{
+    display: flex;
+}
+
+.footer .right{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+}
+
+.privacy, .settings, .terms{
+    margin-right: 30px;
+}
+
+.about, .how-search-works, .business, .advertising{
+    margin-left: 30px;
 }
