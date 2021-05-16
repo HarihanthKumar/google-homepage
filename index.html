@@ -1,50 +1,79 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device_width, initial_scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Google</title>
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet"> 
         <link href="css/homeStyle.css" rel="stylesheet" type="text/css">
         <link href="css/reset.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <nav class="header">
-            <ul>
-                <li class="gmail"><a>Gmail</a></li>
-                <li class="images"><a>Images</a></li>
-                <li><a><img src="images/menuIcon.png" alt="menu-icon" class="menu-icon"></a></li>
-                <li><a><img src = "https://lh3.googleusercontent.com/ogw/ADGmqu8Dp_9JztUYPm462K3lsS4WB25e3TSM60My6Ramjw=s32-c-mo" alt="profile-picture" style="border-radius: 50%;" class="profile-photo"></a></li>
-            </ul>
-        </nav>
-        <div class="main-container">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="google-logo" alt="google-logo">
-            <form action="#">
-                <input id="search-box" type="text">
-                <div class="buttons">
-                    <button class="search" type="submit">Google Search</button>
-                    <button class="lucky" type="submit">I'm Feeling Lucky</button>
+    <div class="global-container">
+        <div class="nav-bar-mini">
+            <div class="left-panel">
+                <div class="expanding-menu">
+                    <span class="material-icons">menu</span>
                 </div>
-            </form>
+                <a href="#">All</a>
+                <a href="#">Images</a>
+            </div>
+            <div class="right-panel">
+                <div class="apps">
+                    <span class="material-icons">apps</span>
+                </div>
+                <div class="button">
+                    <button class="sign-in" type="button">Sign in</button>
+                </div>
+            </div>
         </div>
-        <footer class="footer">
-            <div class="location">India</div>
-            <div class="bottom">
-                <div class="left">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">How Search works</a></li>
-                    </ul>
+        <div class="main-container">
+            <div class="main-container-center">
+                <div class="google-logo">
+                    <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo" class="google-logo-img">
                 </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#" class="privacy">Privacy</a></li>
-                        <li><a href="#" class="terms">Terms</a></li>
-                        <li><a href="#" class="settings">Settings</a></li>
-                    </ul>
+                <div class="search-box">
+                    <form action="#">
+                        <div class="search-box-container">
+                            <span class="material-icons" style="opacity: 0.5;">search</span>
+                            <input class="input-box" type="text" style="border: 0; outline: none; width: 85%;">
+                            <span class="material-icons" style="opacity: 0.5;">mic</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="misc">
+                    <div class="weather">
+                        <span class="material-icons">wb_sunny</span>
+                        <p>Weather</p>
+                    </div>
+                    <div class="sports">
+                        <span class="material-icons">emoji_events</span>
+                        <p>Sports</p>
+                    </div>
+                    <div class="watch">
+                        <span class="material-icons">smart_display</span>
+                        <p>What to watch</p>
+                    </div>
+                    <div class="food">
+                        <span class="material-icons">restaurant</span>
+                        <p>Restaurants</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bottom">
+            <div class="location">India</div>
+            <div class="footer">
+                <div class="panel1">
+                    <div class="settings"><a href="#">Settings</a></div>
+                    <div class="privacy"><a href="#">Privacy</a></div>
+                    <div class="terms"><a href="#">Terms</a></div>
+                </div>
+                <div class="panel2">
+                    <div class="adverstising"><a href="#">Advertising</a></div>
+                    <div class="business"><a href="#">Business</a></div>
+                    <div class="about"><a href="#">About</a></div>
                 </div>
             </div>
         </footer>
-    </body>
+    </div>
 </html>
