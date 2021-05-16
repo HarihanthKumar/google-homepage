@@ -17,17 +17,17 @@ html{
     margin-top: 5px;
     display: flex;
     align-items: stretch;
-    width: 40%;
+    width: 50%;
     justify-content: space-evenly;
 }
 
 .left-panel a{
     color: gray;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .left-panel a:focus{
@@ -38,7 +38,7 @@ html{
     margin-left: auto;
     align-items: center;
     padding: 1%;
-    width: 25%;
+    width: 30%;
     justify-content: space-evenly;
 }
 
@@ -46,7 +46,8 @@ html{
     background-color: #1a73e8;
     color: white;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
 }
 
 .main-container{
